@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>trident-2207 | NetApp Documentation</title>
+    <atom:link href="https://docs.netapp.com/us-en/trident-2207/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://docs.netapp.com/us-en/trident-2207</link>
+    <description>The latest updates from NetApp Documentation</description>
+    <language>en-us</language>
+    <ttl>60</ttl>
+    <pubDate>Tue, 25 Oct 2022 15:25:04 +0000</pubDate>
+    <lastBuildDate>Tue, 25 Oct 2022 15:25:04 +0000</lastBuildDate>
+    
+  </channel>
+</rss>
