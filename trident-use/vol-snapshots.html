@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head class="at-element-marker">
-  <title>Search results</title>
+  <title>Work with snapshots</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Search results" />
+  <meta property="og:title" content="Work with snapshots" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/us-en/trident-2207/search.html" />
-	<meta property="og:description" content="" />
+	<meta property="og:url" content="https://docs.netapp.com/us-en/trident-2207/trident-use/vol-snapshots.html" />
+	<meta property="og:description" content="Beginning with the 20.01 release of Astra Trident, you can create snapshots of Persistent Volumes (PVs) at the Kubernetes layer. You can use these snapshots ..." />
   <meta property="og:image" content="https://docs.netapp.com/us-en/trident-2207/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="">
-  <meta name="keywords" content=" "><meta name="translate" content="false"/><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Beginning with the 20.01 release of Astra Trident, you can create snapshots of Persistent Volumes (PVs) at the Kubernetes layer. You can use these snapshots ...">
+  <meta name="keywords" content=" volumes, on-demand volume snapshots, create snapshots, backends, kubernetes, create PVCs, PVCs"><!-- Icons -->
   <link rel="icon" href="/us-en/trident-2207/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -98,7 +98,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><link rel='stylesheet' href='/us-en/trident-2207/css/prism.css' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/us-en/trident-2207/js/na-search.js'></script><script src='/us-en/trident-2207/js/na-pagenav.js'></script><link rel='stylesheet' href='/us-en/trident-2207/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/us-en/trident-2207/css/prism-netapp.css' type='text/css'>
 
 
@@ -182,6 +182,65 @@
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
   
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div id="version-dropdown-new" class="custom-dropdown" >
+  <div class="custom-dropdown-select unselected" title="Astra Trident 22.07">
+    <label>Version</label>
+    <span translate="no" class="notranslate">Astra Trident 22.07</span>
+    <img src="/us-en/trident-2207/images/chevron_up.svg" alt="" class="custom-icon chevrondown invisible" />
+    <img src="/us-en/trident-2207/images/chevron_down.svg" alt="" class="custom-icon chevronup" />
+  </div>
+
+  <ul class="custom-dropdown-menu"><li>
+      
+      <a href="https://docs.netapp.com/us-en/trident-2207/trident-use/vol-snapshots.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> 22.07</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/trident/trident-use/vol-snapshots.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> latest</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/trident-2204/trident-use/vol-snapshots.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> 22.04</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/trident-2201/trident-use/vol-snapshots.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> 22.01</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/trident-2110/trident-use/vol-snapshots.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> 21.10</span></span>
+      </a>
+                     
+    </li>
+    
+  </ul>
+</div><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/trident-2207/issues/new?body=Page%3A%20[Work with snapshots](https://docs.netapp.com/us-en/trident-2207/trident-use/vol-snapshots.html)&template=public-issue-template.md" class="page-nav-contribute-link" role="button"><img src="/us-en/trident-2207/images/discuss-sm.svg" alt="" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/trident-2207/blob/main/trident-use/vol-snapshots.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/trident-2207/images/edit-sm.svg" alt="" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/trident-2207/images/article-sm.svg" alt="" class="github-icon" />Learn how to contribute</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">ON THIS PAGE</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -254,6 +313,31 @@
       </div>
 
       
+      
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/us-en/trident-2207/search.html"
+          data-type="widget" 
+          data-placeholder="Search Documentation"
+          data-no-results-found="No results were found for {query}"
+          data-did-you-mean="Search for {suggestion}."
+          data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?"
+          data-results-found="{hitCount} results found"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/trident-2207/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
     </div>
   </div>
   <div class="n-property-bar__toolbar">
@@ -268,15 +352,15 @@
       </div>
 
       <ul class="custom-dropdown-menu"><li>
-          <a href="https://docs.netapp.com/us-en/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+          <a href="https://docs.netapp.com/us-en/trident-2207/trident-use/vol-snapshots.html" target="_self"><span translate="no" class="notranslate">English</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ja-jp/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+          <a href="https://docs.netapp.com/ja-jp/trident-2207/trident-use/vol-snapshots.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-cn/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+          <a href="https://docs.netapp.com/zh-cn/trident-2207/trident-use/vol-snapshots.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-tw/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+          <a href="https://docs.netapp.com/zh-tw/trident-2207/trident-use/vol-snapshots.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ko-kr/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+          <a href="https://docs.netapp.com/ko-kr/trident-2207/trident-use/vol-snapshots.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
         </li></ul>
     </div><!-- End Language Selector -->
 
@@ -615,6 +699,8 @@
           
 
 
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
 
 
 
@@ -1144,7 +1230,7 @@
       data-pdf-exists="true" 
       data-pdf-filename="Work with snapshots"
       data-li-level="3#" 
-      class=" "
+      class="  active "
     ><a class="na-navbar-padding" href="/us-en/trident-2207/trident-use/vol-snapshots.html">
         Work with snapshots
       </a></li><li 
@@ -1432,31 +1518,317 @@
 </div>
 
       <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Search results</h1>
+  <h1 class="n-doc__component-detail-heading">Work with snapshots</h1>
 </div>
 
 
-<div id="search-demo-container" class="n-property-bar__search">
-  <div id="react-search" 
-  data-search-html="/us-en/trident-2207/search.html"
-  data-type="page" 
-  data-placeholder="Search Documentation" 
-  data-no-results-found="No results were found for {query}" 
-  data-did-you-mean="Search for {suggestion}." 
-  data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" 
-  data-results-found="{hitCount} results found"
-  data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
-  data-error-reset="Reset Search"
-  data-sk-es-pf-indexes=""
-  data-flavor=""></div>
-  <button class="search-all-icon n-property-bar__search-toggle-button" type="button">
-    <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
-      <title>search</title>
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/trident-2207/common/svg/sprite.svg#search"></use>
-    </svg>
-  </button>
-</div>
+<p class="page-details">
+  
+    
+    <time datetime="2022-10-13 20:45:57 +0000">10/13/2022</time>
+    
+  
 
+<span>Contributors
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/juliantap">
+    <img  class="avatar avatar-small"
+          alt="juliantap"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/83591660?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/netapp-mwallis">
+    <img  class="avatar avatar-small"
+          alt="netapp-mwallis"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/53353653?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+</span>
+
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Beginning with the 20.01 release of Astra Trident, you can create snapshots of PVs at the Kubernetes layer. You can use these snapshots to maintain point-in-time copies of volumes that have been created by Astra Trident and schedule the creation of additional volumes (clones). Volume snapshot is supported by the <code>ontap-nas</code>, <code>ontap-san</code>, <code>ontap-san-economy</code>, <code>solidfire-san</code>, <code>gcp-cvs</code>, and <code>azure-netapp-files</code> drivers.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/trident-2207/images/note.svg" alt="Note">
+</td>
+<td class="content">
+This feature is available from Kubernetes 1.17 (beta) and is GA from 1.20. To understand the changes involved in moving from beta to GA, see <a href="https://kubernetes.io/blog/2020/12/10/kubernetes-1.20-volume-snapshot-moves-to-ga/" target="_blank" rel="noopener">the release blog</a>. With the graduation to GA, the <code>v1</code> API version is introduced and is backward compatible with <code>v1beta1</code> snapshots.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<div class="title">What you&#8217;ll need</div>
+<ul>
+<li>
+<p>Creating volume snapshots requires creating an external snapshot controller and Custom Resource Definitions (CRDs). This is the responsibility of the Kubernetes orchestrator being used (for example: Kubeadm, GKE, OpenShift).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If your Kubernetes distribution does not include the snapshot controller and CRDs, you can deploy them as follows.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create volume snapshot CRDs.</p>
+<div class="paragraph">
+<p>For Kubernetes 1.20 and above, use v1 snapshot CRDs with snapshot components of v5.0 or above. For Kubernetes 1.19, use v1beta1 with v3.0.3 snapshot components.</p>
+</div>
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">v5.0 components</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre>cat snapshot-setup.sh
+#!/bin/bash
+# Create volume snapshot CRDs
+kubectl apply -f https://raw.githubusercontent.com/kubernetes-csi/external-snapshotter/release-5.0/client/config/crd/snapshot.storage.k8s.io_volumesnapshotclasses.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes-csi/external-snapshotter/release-5.0/client/config/crd/snapshot.storage.k8s.io_volumesnapshotcontents.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes-csi/external-snapshotter/release-5.0/client/config/crd/snapshot.storage.k8s.io_volumesnapshots.yaml</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">v3.0.3 components</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre>cat snapshot-setup.sh
+#!/bin/bash
+# Create volume snapshot CRDs
+kubectl apply -f https://raw.githubusercontent.com/kubernetes-csi/external-snapshotter/v3.0.3/client/config/crd/snapshot.storage.k8s.io_volumesnapshotclasses.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes-csi/external-snapshotter/v3.0.3/client/config/crd/snapshot.storage.k8s.io_volumesnapshotcontents.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes-csi/external-snapshotter/v3.0.3/client/config/crd/snapshot.storage.k8s.io_volumesnapshots.yaml</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>Create the snapshot controller in the desired namespace. Edit the YAML manifests below to modify namespace.</p>
+<div class="paragraph">
+<p>For Kubernetes 1.20 and above use v5.0 or above. For Kubernetes version 1.19 use v3.0.3</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/trident-2207/images/note.svg" alt="Note">
+</td>
+<td class="content">
+Don’t create a snapshot controller if setting up on-demand volume snapshots in a GKE environment. GKE uses a built-in, hidden snapshot-controller.
+</td>
+</tr>
+</table>
+</div>
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">v5.0 controller</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre>kubectl apply -f https://raw.githubusercontent.com/kubernetes-csi/external-snapshotter/release-5.0/deploy/kubernetes/snapshot-controller/rbac-snapshot-controller.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes-csi/external-snapshotter/release-5.0/deploy/kubernetes/snapshot-controller/setup-snapshot-controller.yaml</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">v3.0.3 controller</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre>kubectl apply -f https://raw.githubusercontent.com/kubernetes-csi/external-snapshotter/v3.0.3/deploy/kubernetes/snapshot-controller/rbac-snapshot-controller.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes-csi/external-snapshotter/v3.0.3/deploy/kubernetes/snapshot-controller/setup-snapshot-controller.yaml</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/trident-2207/images/tip.svg" alt="Tip">
+</td>
+<td class="content">
+CSI Snapshotter provides a <a href="https://github.com/kubernetes-csi/external-snapshotter#validating-webhook" target="_blank" rel="noopener">validating webhook</a> to help users validate existing v1beta1 snapshots and confirm they are valid resource objects. The validating webhook automatically labels invalid snapshot objects and prevents the creation of future invalid objects. The validating webhook is deployed by the Kubernetes orchestrator. See the instructions to deploy the validating webhook manually <a href="https://github.com/kubernetes-csi/external-snapshotter/blob/release-3.0/deploy/kubernetes/webhook-example/README.md" target="_blank" rel="noopener">here</a>. Find examples of invalid snapshot manifests <a href="https://github.com/kubernetes-csi/external-snapshotter/tree/release-3.0/examples/kubernetes" target="_blank" rel="noopener">here</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The example detailed below explains the constructs required for working with snapshots and shows how snapshots can be created and used.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-1-set-up-a-volumesnapshotclass">Step 1: Set up a <code>VolumeSnapshotClass</code></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Before creating a volume snapshot, set up a <a href="../trident-reference/objects.html" target="_blank" rel="noopener"><code>VolumeSnapshotClass</code></a>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cat snap-sc.yaml
+#Use apiVersion v1 for Kubernetes 1.20 and above. For Kubernetes 1.19, use apiVersion v1beta1.
+apiVersion: snapshot.storage.k8s.io/v1
+kind: VolumeSnapshotClass
+metadata:
+  name: csi-snapclass
+driver: csi.trident.netapp.io
+deletionPolicy: Delete</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>driver</code> points to Astra Trident’s CSI driver. <code>deletionPolicy</code> can be <code>Delete</code> or <code>Retain</code>. When set to <code>Retain</code>, the underlying physical snapshot on the storage cluster is retained even when the <code>VolumeSnapshot</code> object is deleted.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-2-create-a-snapshot-of-an-existing-pvc">Step 2: Create a snapshot of an existing PVC</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre>cat snap.yaml
+#Use apiVersion v1 for Kubernetes 1.20 and above. For Kubernetes 1.19, use apiVersion v1beta1.
+apiVersion: snapshot.storage.k8s.io/v1
+kind: VolumeSnapshot
+metadata:
+  name: pvc1-snap
+spec:
+  volumeSnapshotClassName: csi-snapclass
+  source:
+    persistentVolumeClaimName: pvc1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The snapshot is being created for a PVC named <code>pvc1</code>, and the name of the snapshot is set to <code>pvc1-snap</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>kubectl create -f snap.yaml
+volumesnapshot.snapshot.storage.k8s.io/pvc1-snap created
+
+kubectl get volumesnapshots
+NAME                   AGE
+pvc1-snap              50s</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This created a <code>VolumeSnapshot</code> object. A VolumeSnapshot is analogous to a PVC and is associated with a <code>VolumeSnapshotContent</code> object that represents the actual snapshot.</p>
+</div>
+<div class="paragraph">
+<p>It is possible to identify the <code>VolumeSnapshotContent</code> object for the <code>pvc1-snap</code> VolumeSnapshot by describing it.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>kubectl describe volumesnapshots pvc1-snap
+Name:         pvc1-snap
+Namespace:    default
+.
+.
+.
+Spec:
+  Snapshot Class Name:    pvc1-snap
+  Snapshot Content Name:  snapcontent-e8d8a0ca-9826-11e9-9807-525400f3f660
+  Source:
+    API Group:
+    Kind:       PersistentVolumeClaim
+    Name:       pvc1
+Status:
+  Creation Time:  2019-06-26T15:27:29Z
+  Ready To Use:   true
+  Restore Size:   3Gi
+.
+.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>Snapshot Content Name</code> identifies the VolumeSnapshotContent object which serves this snapshot. The <code>Ready To Use</code> parameter indicates that the Snapshot can be used to create a new PVC.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-3-create-pvcs-from-volumesnapshots">Step 3: Create PVCs from VolumeSnapshots</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>See the following example for creating a PVC using a snapshot:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cat pvc-from-snap.yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-from-snap
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: golden
+  resources:
+    requests:
+      storage: 3Gi
+  dataSource:
+    name: pvc1-snap
+    kind: VolumeSnapshot
+    apiGroup: snapshot.storage.k8s.io</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>dataSource</code> shows that the PVC must be created using a VolumeSnapshot named <code>pvc1-snap</code> as the source of the data. This instructs Astra Trident to create a PVC from the snapshot. After the PVC is created, it can be attached to a pod and used just like any other PVC.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/trident-2207/images/note.svg" alt="Note">
+</td>
+<td class="content">
+When deleting a Persistent Volume with associated snapshots, the corresponding Trident volume is updated to a “Deleting state”. For the Astra Trident volume to be deleted, the snapshots of the volume should be removed.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="find-more-information">Find more information</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../trident-concepts/snapshots.html" target="_blank" rel="noopener">Volume snapshots</a></p>
+</li>
+<li>
+<p><a href="../trident-reference/objects.html" target="_blank" rel="noopener"><code>VolumeSnapshotClass</code></a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 
     </article>
     <!-- Page Container -->
@@ -1600,29 +1972,4 @@
     <script src='/us-en/trident-2207/js/www-ntap.js'></script>
     <script src='/us-en/trident-2207/js/tabbed-blocks.js'></script>
     <script src='/us-en/trident-2207/js/sidebar.js'></script>
-  </body><script>
-    /*
-      if(hasParameter(window.location.search,'q')) {
-        var queryString = decodeURI(getParameter(window.location.search, 'q'));
-        document.getElementsByClassName("sk-search-box__text")[0].setAttribute("value", queryString);
-      }
-
-      function getParameter(searchString,param) {
-        var params = searchString.split('?&');
-        for(var i=0;i<params.length;i++) {
-          var paramIndex = params[i].indexOf(param+"=");
-          if(paramIndex != -1) {
-            return params[i].substring(paramIndex+param.length+1);
-          }
-        }
-
-        return "";
-      }
-
-      function hasParameter(searchString,param) {
-        searchString = searchString || "";
-        param = param || "";
-        return (searchString.indexOf("?"+param+"=") != -1 || searchString.indexOf("&"+param+"=") != -1);
-      }
-      */
-  </script></html>
+  </body></html>

@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head class="at-element-marker">
-  <title>Search results</title>
+  <title>Work with volumes</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Search results" />
+  <meta property="og:title" content="Work with volumes" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/us-en/trident-2207/search.html" />
-	<meta property="og:description" content="" />
+	<meta property="og:url" content="https://docs.netapp.com/us-en/trident-2207/trident-docker/volumes-docker.html" />
+	<meta property="og:description" content="To create volumes, use the standard `docker volume` commands with the Astra Trident driver name specified when needed." />
   <meta property="og:image" content="https://docs.netapp.com/us-en/trident-2207/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="">
-  <meta name="keywords" content=" "><meta name="translate" content="false"/><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="To create volumes, use the standard `docker volume` commands with the Astra Trident driver name specified when needed.">
+  <meta name="keywords" content=" create volumes, astra trident, trident for docker, docker, docker volume"><!-- Icons -->
   <link rel="icon" href="/us-en/trident-2207/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -98,7 +98,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><link rel='stylesheet' href='/us-en/trident-2207/css/prism.css' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/us-en/trident-2207/js/na-search.js'></script><script src='/us-en/trident-2207/js/na-pagenav.js'></script><link rel='stylesheet' href='/us-en/trident-2207/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/us-en/trident-2207/css/prism-netapp.css' type='text/css'>
 
 
@@ -182,6 +182,65 @@
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
   
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div id="version-dropdown-new" class="custom-dropdown" >
+  <div class="custom-dropdown-select unselected" title="Astra Trident 22.07">
+    <label>Version</label>
+    <span translate="no" class="notranslate">Astra Trident 22.07</span>
+    <img src="/us-en/trident-2207/images/chevron_up.svg" alt="" class="custom-icon chevrondown invisible" />
+    <img src="/us-en/trident-2207/images/chevron_down.svg" alt="" class="custom-icon chevronup" />
+  </div>
+
+  <ul class="custom-dropdown-menu"><li>
+      
+      <a href="https://docs.netapp.com/us-en/trident-2207/trident-docker/volumes-docker.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> 22.07</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/trident/trident-docker/volumes-docker.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> latest</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/trident-2204/trident-docker/volumes-docker.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> 22.04</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/trident-2201/trident-docker/volumes-docker.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> 22.01</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/trident-2110/trident-docker/volumes-docker.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> 21.10</span></span>
+      </a>
+                     
+    </li>
+    
+  </ul>
+</div><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/trident-2207/issues/new?body=Page%3A%20[Work with volumes](https://docs.netapp.com/us-en/trident-2207/trident-docker/volumes-docker.html)&template=public-issue-template.md" class="page-nav-contribute-link" role="button"><img src="/us-en/trident-2207/images/discuss-sm.svg" alt="" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/trident-2207/blob/main/trident-docker/volumes-docker.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/trident-2207/images/edit-sm.svg" alt="" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/trident-2207/images/article-sm.svg" alt="" class="github-icon" />Learn how to contribute</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">ON THIS PAGE</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -254,6 +313,31 @@
       </div>
 
       
+      
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/us-en/trident-2207/search.html"
+          data-type="widget" 
+          data-placeholder="Search Documentation"
+          data-no-results-found="No results were found for {query}"
+          data-did-you-mean="Search for {suggestion}."
+          data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?"
+          data-results-found="{hitCount} results found"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/trident-2207/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
     </div>
   </div>
   <div class="n-property-bar__toolbar">
@@ -268,15 +352,15 @@
       </div>
 
       <ul class="custom-dropdown-menu"><li>
-          <a href="https://docs.netapp.com/us-en/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+          <a href="https://docs.netapp.com/us-en/trident-2207/trident-docker/volumes-docker.html" target="_self"><span translate="no" class="notranslate">English</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ja-jp/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+          <a href="https://docs.netapp.com/ja-jp/trident-2207/trident-docker/volumes-docker.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-cn/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+          <a href="https://docs.netapp.com/zh-cn/trident-2207/trident-docker/volumes-docker.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-tw/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+          <a href="https://docs.netapp.com/zh-tw/trident-2207/trident-docker/volumes-docker.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ko-kr/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+          <a href="https://docs.netapp.com/ko-kr/trident-2207/trident-docker/volumes-docker.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
         </li></ul>
     </div><!-- End Language Selector -->
 
@@ -1209,7 +1293,7 @@
       data-pdf-exists="true" 
       data-pdf-filename="Work with volumes"
       data-li-level="2" 
-      class="subfolders "
+      class="subfolders  active "
     ><a href="/us-en/trident-2207/trident-docker/volumes-docker.html">
         <div class="na-navbar-padding"> Work with volumes</div>
       </a>
@@ -1432,31 +1516,215 @@
 </div>
 
       <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Search results</h1>
+  <h1 class="n-doc__component-detail-heading">Work with volumes</h1>
 </div>
 
 
-<div id="search-demo-container" class="n-property-bar__search">
-  <div id="react-search" 
-  data-search-html="/us-en/trident-2207/search.html"
-  data-type="page" 
-  data-placeholder="Search Documentation" 
-  data-no-results-found="No results were found for {query}" 
-  data-did-you-mean="Search for {suggestion}." 
-  data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" 
-  data-results-found="{hitCount} results found"
-  data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
-  data-error-reset="Reset Search"
-  data-sk-es-pf-indexes=""
-  data-flavor=""></div>
-  <button class="search-all-icon n-property-bar__search-toggle-button" type="button">
-    <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
-      <title>search</title>
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/trident-2207/common/svg/sprite.svg#search"></use>
-    </svg>
-  </button>
-</div>
+<p class="page-details">
+  
+    
+    <time datetime="2022-09-27 22:04:12 +0000">09/27/2022</time>
+    
+  
 
+<span>Contributors
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/netapp-mwallis">
+    <img  class="avatar avatar-small"
+          alt="netapp-mwallis"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/53353653?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/juliantap">
+    <img  class="avatar avatar-small"
+          alt="juliantap"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/83591660?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+</span>
+
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can easily create, clone, and remove volumes using the standard <code>docker volume</code> commands with the Astra Trident driver name specified when needed.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="create-a-volume">Create a volume</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Create a volume with a driver using the default name:</p>
+<div class="listingblock">
+<div class="content">
+<pre>docker volume create -d netapp --name firstVolume</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Create a volume with a specific Astra Trident instance:</p>
+<div class="listingblock">
+<div class="content">
+<pre>docker volume create -d ntap_bronze --name bronzeVolume</pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/trident-2207/images/note.svg" alt="Note">
+</td>
+<td class="content">
+If you do not specify any <a href="volume-driver-options.html" target="_blank" rel="noopener">options</a>, the defaults for the driver are used.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Override the default volume size. See the following example to create a 20GiB volume with a driver:</p>
+<div class="listingblock">
+<div class="content">
+<pre>docker volume create -d netapp --name my_vol --opt size=20G</pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/trident-2207/images/tip.svg" alt="Tip">
+</td>
+<td class="content">
+Volume sizes are expressed as strings containing an integer value with optional units (example: 10G, 20GB, 3TiB). If no units are specified, the default is G. Size units can be expressed either as powers of 2 (B, KiB, MiB, GiB, TiB) or powers of 10 (B, KB, MB, GB, TB). Shorthand units use powers of 2 (G = GiB, T = TiB, …).
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="remove-a-volume">Remove a volume</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Remove the volume just like any other Docker volume:</p>
+<div class="listingblock">
+<div class="content">
+<pre>docker volume rm firstVolume</pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/trident-2207/images/important.svg" alt="Important">
+</td>
+<td class="content">
+When using the <code>solidfire-san</code> driver, the above example deletes and purges the volume.
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Perform the steps below to upgrade Astra Trident for Docker.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="clone-a-volume">Clone a volume</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When using the <code>ontap-nas</code>, <code>ontap-san</code>, <code>solidfire-san</code>, and <code>gcp-cvs storage drivers</code>, Astra Trident can clone volumes. When using the <code>ontap-nas-flexgroup</code> or <code>ontap-nas-economy</code> drivers, cloning is not supported. Creating a new volume from an existing volume will result in a new snapshot being created.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Inspect the volume to enumerate snapshots:</p>
+<div class="listingblock">
+<div class="content">
+<pre>docker volume inspect &lt;volume_name&gt;</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Create a new volume from an existing volume. This will result in a new snapshot being created:</p>
+<div class="listingblock">
+<div class="content">
+<pre>docker volume create -d &lt;driver_name&gt; --name &lt;new_name&gt; -o from=&lt;source_docker_volume&gt;</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Create a new volume from an existing snapshot on a volume. This will not create a new snapshot:</p>
+<div class="listingblock">
+<div class="content">
+<pre>docker volume create -d &lt;driver_name&gt; --name &lt;new_name&gt; -o from=&lt;source_docker_volume&gt; -o fromSnapshot=&lt;source_snap_name&gt;</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="example">Example</h3>
+<div class="listingblock">
+<div class="content">
+<pre>docker volume inspect firstVolume
+
+[
+    {
+        "Driver": "ontap-nas",
+        "Labels": null,
+        "Mountpoint": "/var/lib/docker-volumes/ontap-nas/netappdvp_firstVolume",
+        "Name": "firstVolume",
+        "Options": {},
+        "Scope": "global",
+        "Status": {
+            "Snapshots": [
+                {
+                    "Created": "2017-02-10T19:05:00Z",
+                    "Name": "hourly.2017-02-10_1505"
+                }
+            ]
+        }
+    }
+]
+
+docker volume create -d ontap-nas --name clonedVolume -o from=firstVolume
+clonedVolume
+
+docker volume rm clonedVolume
+docker volume create -d ontap-nas --name volFromSnap -o from=firstVolume -o fromSnapshot=hourly.2017-02-10_1505
+volFromSnap
+
+docker volume rm volFromSnap</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="access-externally-created-volumes">Access externally created volumes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can access externally created block devices (or their clones) by containers using Trident <strong>only</strong> if they have no partitions and if their filesystem is supported by Astra Trident (for example: an <code>ext4</code>-formatted <code>/dev/sdc1</code> will not be accessible via Astra Trident).</p>
+</div>
+</div>
+</div>
 
     </article>
     <!-- Page Container -->
@@ -1600,29 +1868,4 @@
     <script src='/us-en/trident-2207/js/www-ntap.js'></script>
     <script src='/us-en/trident-2207/js/tabbed-blocks.js'></script>
     <script src='/us-en/trident-2207/js/sidebar.js'></script>
-  </body><script>
-    /*
-      if(hasParameter(window.location.search,'q')) {
-        var queryString = decodeURI(getParameter(window.location.search, 'q'));
-        document.getElementsByClassName("sk-search-box__text")[0].setAttribute("value", queryString);
-      }
-
-      function getParameter(searchString,param) {
-        var params = searchString.split('?&');
-        for(var i=0;i<params.length;i++) {
-          var paramIndex = params[i].indexOf(param+"=");
-          if(paramIndex != -1) {
-            return params[i].substring(paramIndex+param.length+1);
-          }
-        }
-
-        return "";
-      }
-
-      function hasParameter(searchString,param) {
-        searchString = searchString || "";
-        param = param || "";
-        return (searchString.indexOf("?"+param+"=") != -1 || searchString.indexOf("&"+param+"=") != -1);
-      }
-      */
-  </script></html>
+  </body></html>

@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head class="at-element-marker">
-  <title>Search results</title>
+  <title>Downgrade Astra Trident</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Search results" />
+  <meta property="og:title" content="Downgrade Astra Trident" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/us-en/trident-2207/search.html" />
-	<meta property="og:description" content="" />
+	<meta property="og:url" content="https://docs.netapp.com/us-en/trident-2207/trident-managing-k8s/downgrade-trident.html" />
+	<meta property="og:description" content="Learn about the steps involved in downgrading to an earlier version of Astra Trident." />
   <meta property="og:image" content="https://docs.netapp.com/us-en/trident-2207/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="">
-  <meta name="keywords" content=" "><meta name="translate" content="false"/><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Learn about the steps involved in downgrading to an earlier version of Astra Trident.">
+  <meta name="keywords" content=" downgrade, astra trident, methods, operator, tridentctl, helm"><!-- Icons -->
   <link rel="icon" href="/us-en/trident-2207/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -98,7 +98,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><link rel='stylesheet' href='/us-en/trident-2207/css/prism.css' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/us-en/trident-2207/js/na-search.js'></script><script src='/us-en/trident-2207/js/na-pagenav.js'></script><link rel='stylesheet' href='/us-en/trident-2207/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/us-en/trident-2207/css/prism-netapp.css' type='text/css'>
 
 
@@ -182,6 +182,65 @@
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
   
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div id="version-dropdown-new" class="custom-dropdown" >
+  <div class="custom-dropdown-select unselected" title="Astra Trident 22.07">
+    <label>Version</label>
+    <span translate="no" class="notranslate">Astra Trident 22.07</span>
+    <img src="/us-en/trident-2207/images/chevron_up.svg" alt="" class="custom-icon chevrondown invisible" />
+    <img src="/us-en/trident-2207/images/chevron_down.svg" alt="" class="custom-icon chevronup" />
+  </div>
+
+  <ul class="custom-dropdown-menu"><li>
+      
+      <a href="https://docs.netapp.com/us-en/trident-2207/trident-managing-k8s/downgrade-trident.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> 22.07</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/trident/trident-managing-k8s/downgrade-trident.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> latest</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/trident-2204/trident-managing-k8s/downgrade-trident.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> 22.04</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/trident-2201/trident-managing-k8s/downgrade-trident.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> 22.01</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/trident-2110/trident-managing-k8s/downgrade-trident.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> 21.10</span></span>
+      </a>
+                     
+    </li>
+    
+  </ul>
+</div><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/trident-2207/issues/new?body=Page%3A%20[Downgrade Astra Trident](https://docs.netapp.com/us-en/trident-2207/trident-managing-k8s/downgrade-trident.html)&template=public-issue-template.md" class="page-nav-contribute-link" role="button"><img src="/us-en/trident-2207/images/discuss-sm.svg" alt="" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/trident-2207/blob/main/trident-managing-k8s/downgrade-trident.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/trident-2207/images/edit-sm.svg" alt="" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/trident-2207/images/article-sm.svg" alt="" class="github-icon" />Learn how to contribute</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">ON THIS PAGE</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -254,6 +313,31 @@
       </div>
 
       
+      
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/us-en/trident-2207/search.html"
+          data-type="widget" 
+          data-placeholder="Search Documentation"
+          data-no-results-found="No results were found for {query}"
+          data-did-you-mean="Search for {suggestion}."
+          data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?"
+          data-results-found="{hitCount} results found"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/trident-2207/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
     </div>
   </div>
   <div class="n-property-bar__toolbar">
@@ -268,15 +352,15 @@
       </div>
 
       <ul class="custom-dropdown-menu"><li>
-          <a href="https://docs.netapp.com/us-en/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+          <a href="https://docs.netapp.com/us-en/trident-2207/trident-managing-k8s/downgrade-trident.html" target="_self"><span translate="no" class="notranslate">English</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ja-jp/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+          <a href="https://docs.netapp.com/ja-jp/trident-2207/trident-managing-k8s/downgrade-trident.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-cn/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+          <a href="https://docs.netapp.com/zh-cn/trident-2207/trident-managing-k8s/downgrade-trident.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-tw/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+          <a href="https://docs.netapp.com/zh-tw/trident-2207/trident-managing-k8s/downgrade-trident.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ko-kr/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+          <a href="https://docs.netapp.com/ko-kr/trident-2207/trident-managing-k8s/downgrade-trident.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
         </li></ul>
     </div><!-- End Language Selector -->
 
@@ -477,6 +561,8 @@
 
 
 
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
 
 
         </li>
@@ -994,7 +1080,7 @@
       data-pdf-exists="true" 
       data-pdf-filename="Downgrade Astra Trident"
       data-li-level="2#" 
-      class=" "
+      class="  active "
     ><a class="na-navbar-padding" href="/us-en/trident-2207/trident-managing-k8s/downgrade-trident.html">
         Downgrade Astra Trident
       </a></li></ul></li><li 
@@ -1432,31 +1518,270 @@
 </div>
 
       <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Search results</h1>
+  <h1 class="n-doc__component-detail-heading">Downgrade Astra Trident</h1>
 </div>
 
 
-<div id="search-demo-container" class="n-property-bar__search">
-  <div id="react-search" 
-  data-search-html="/us-en/trident-2207/search.html"
-  data-type="page" 
-  data-placeholder="Search Documentation" 
-  data-no-results-found="No results were found for {query}" 
-  data-did-you-mean="Search for {suggestion}." 
-  data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" 
-  data-results-found="{hitCount} results found"
-  data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
-  data-error-reset="Reset Search"
-  data-sk-es-pf-indexes=""
-  data-flavor=""></div>
-  <button class="search-all-icon n-property-bar__search-toggle-button" type="button">
-    <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
-      <title>search</title>
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/trident-2207/common/svg/sprite.svg#search"></use>
-    </svg>
-  </button>
-</div>
+<p class="page-details">
+  
+    
+    <time datetime="2022-09-27 22:04:12 +0000">09/27/2022</time>
+    
+  
 
+<span>Contributors
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/netapp-mwallis">
+    <img  class="avatar avatar-small"
+          alt="netapp-mwallis"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/53353653?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/juliantap">
+    <img  class="avatar avatar-small"
+          alt="juliantap"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/83591660?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+</span>
+
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Learn about the steps involved in downgrading to an earlier version of Astra Trident.</p>
+</div>
+<div class="paragraph">
+<p>You might consider downgrading for various reasons, such as the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Contingency planning</p>
+</li>
+<li>
+<p>Immediate fix for bugs observed as a result of an upgrade</p>
+</li>
+<li>
+<p>Dependency issues, unsuccessful and incomplete upgrades</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="when-to-downgrade">When to downgrade</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You should consider a downgrade when moving to a Astra Trident release that uses CRDs. Because Astra Trident now uses CRDs for maintaining state, all storage entities created (backends, storage classes, PV, and volume snapshots) have associated CRD objects instead of data written into the <code>trident</code> PV (used by the earlier installed version of Astra Trident). Newly created PVs, backends, and storage classes are all maintained as CRD objects. If you need to downgrade, this should only be attempted for a version of Astra Trident that runs using CRDs (19.07 and later). This is to ensure that all the operations performed on the current Astra Trident release are visible after the downgrade occurs.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="when-not-to-downgrade">When not to downgrade</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You should not downgrade to a release of Trident that uses <code>etcd</code> to maintain state (19.04 and earlier). All operations performed with the current Astra Trident release are not reflected after the downgrade. Newly created PVs are not usable when moving back to an earlier version. Changes made to objects such as backends, PVs, storage classes, and volume snapshots (created/updated/deleted) are not visible to Astra Trident when moving back to an earlier version. Going back to an earlier version does not disrupt access for PVs that were already created by using the older release, unless they have been upgraded.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="downgrade-process-when-astra-trident-is-installed-by-using-the-operator">Downgrade process when Astra Trident is installed by using the operator</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For installations done using the Trident Operator, the downgrade process is different and does not require the use of <code>tridentctl</code>.</p>
+</div>
+<div class="paragraph">
+<p>For installations done using the Trident operator, Astra Trident can be downgraded to either of the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A version that is installed using the namespace-scoped operator (20.07 - 20.10).</p>
+</li>
+<li>
+<p>A version that is installed using the cluster-scoped operator (21.01 and later).</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="downgrade-to-cluster-scoped-operator">Downgrade to cluster-scoped operator</h3>
+<div class="paragraph">
+<p>To downgrade Astra Trident to a release that uses the cluster-scoped operator, follow the steps mentioned below.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p><a href="uninstall-trident.html" target="_blank" rel="noopener">Uninstall Astra Trident</a>. <strong>Do not wipeout the CRDs unless you want to completely remove an existing installation.</strong></p>
+</li>
+<li>
+<p>Delete the cluster-scoped operator. To do this, you will need the manifest used to deploy the operator. You can obtain it from the <a href="https://github.com/NetApp/trident/blob/stable/v21.07/deploy/bundle.yaml" target="_blank" rel="noopener">Trident GitHub repo</a>. Make sure you switch to the required branch.</p>
+</li>
+<li>
+<p>Continue downgrading by installing the desired version of Astra Trident. Follow the documentation for the desired release.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="downgrade-to-namespace-scoped-operator">Downgrade to namespace-scoped operator</h3>
+<div class="paragraph">
+<p>This section summarizes the steps involved in downgrading to an Astra Trident release that falls in the range 20.07 through 20.10, which will be installed using the namespace-scoped operator.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p><a href="uninstall-trident.html" target="_blank" rel="noopener">Uninstall Astra Trident</a>. <strong>Do not wipeout the CRDs unless you want to completely remove an existing installation.</strong><br>
+Make sure the <code>tridentorchestrator</code> is deleted.</p>
+<div class="listingblock">
+<div class="content">
+<pre>#Check to see if there are any tridentorchestrators present
+kubectl get torc
+NAME        AGE
+trident     20h
+
+#Looks like there is a tridentorchestrator that needs deleting
+kubectl delete torc trident
+tridentorchestrator.trident.netapp.io "trident" deleted</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Delete the cluster-scoped operator. To do this, you will need the manifest used to deploy the operator. You can obtain it here from the <a href="https://github.com/NetApp/trident/blob/stable/v21.07/deploy/bundle.yaml" target="_blank" rel="noopener">Trident GitHub repo</a>. Make sure you switch to the required branch.</p>
+</li>
+<li>
+<p>Delete the <code>tridentorchestrator</code> CRD.</p>
+<div class="listingblock">
+<div class="content">
+<pre>#Check to see if ``tridentorchestrators.trident.netapp.io`` CRD is present and delete it.
+
+kubectl get crd tridentorchestrators.trident.netapp.io
+
+NAME                                     CREATED AT
+tridentorchestrators.trident.netapp.io   2021-01-21T21:11:37Z
+
+kubectl delete crd tridentorchestrators.trident.netapp.io
+
+customresourcedefinition.apiextensions.k8s.io "tridentorchestrators.trident.netapp.io" deleted</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Astra Trident has been uninstalled.</p>
+</div>
+</li>
+<li>
+<p>Continue downgrading by installing the desired version. Follow the documentation for the desired release.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="downgrade-by-using-helm">Downgrade by using Helm</h3>
+<div class="paragraph">
+<p>To downgrade, use the <code>helm rollback</code> command. See the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>helm rollback trident [revision #]</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="downgrade-process-when-astra-trident-is-installed-by-using-tridentctl">Downgrade process when Astra Trident is installed by using <code>tridentctl</code></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you installed Astra Trident by using <code>tridentctl</code>, the downgrade process involves the following steps. This sequence walks you through the downgrade process to move from Astra Trident 21.07 to 20.07.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/trident-2207/images/note.svg" alt="Note">
+</td>
+<td class="content">
+Before beginning the downgrade, you should take a snapshot of your Kubernetes cluster’s <code>etcd</code>. This enables you to back up the current state of Astra Trident’s CRDs.
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Make sure that Trident is installed by using <code>tridentctl</code>. If you are unsure about how Astra Trident is installed, run this simple test:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>List the pods present in the Trident namespace.</p>
+</li>
+<li>
+<p>Identify the version of Astra Trident running in your cluster. You can either use <code>tridentctl</code> or take a look at the image used in the Trident pods.</p>
+</li>
+<li>
+<p>If you <strong>do not see</strong> a <code>tridentOrchestrator</code>, (or) a <code>tridentprovisioner</code>, (or) a pod named <code>trident-operator-xxxxxxxxxx-xxxxx</code>, Astra Trident <strong>is installed</strong> with <code>tridentctl</code>.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Uninstall Astra Trident with the existing <code>tridentctl</code> binary.  In this case, you will uninstall with the 21.07 binary.</p>
+<div class="listingblock">
+<div class="content">
+<pre>tridentctl version -n trident
++----------------+----------------+
+| SERVER VERSION | CLIENT VERSION |
++----------------+----------------+
+| 21.07.0        | 21.07.0        |
++----------------+----------------+
+
+tridentctl uninstall -n trident
+INFO Deleted Trident deployment.
+INFO Deleted Trident daemonset.
+INFO Deleted Trident service.
+INFO Deleted Trident secret.
+INFO Deleted cluster role binding.
+INFO Deleted cluster role.
+INFO Deleted service account.
+INFO Deleted pod security policy.                  podSecurityPolicy=tridentpods
+INFO The uninstaller did not delete Trident's namespace in case it is going to be reused.
+INFO Trident uninstallation succeeded.</pre>
+</div>
+</div>
+</li>
+<li>
+<p>After this is complete, obtain the Trident binary for the desired version (in this example, 20.07), and use it to install Astra Trident. You can generate custom YAMLs for a <a href="../trident-get-started/kubernetes-customize-deploy-tridentctl.html" target="_blank" rel="noopener">customized installation</a> if needed.</p>
+<div class="listingblock">
+<div class="content">
+<pre>cd 20.07/trident-installer/
+./tridentctl install -n trident-ns
+INFO Created installer service account.            serviceaccount=trident-installer
+INFO Created installer cluster role.               clusterrole=trident-installer
+INFO Created installer cluster role binding.       clusterrolebinding=trident-installer
+INFO Created installer configmap.                  configmap=trident-installer
+...
+...
+INFO Deleted installer cluster role binding.
+INFO Deleted installer cluster role.
+INFO Deleted installer service account.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The downgrade process is complete.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
 
     </article>
     <!-- Page Container -->
@@ -1600,29 +1925,4 @@
     <script src='/us-en/trident-2207/js/www-ntap.js'></script>
     <script src='/us-en/trident-2207/js/tabbed-blocks.js'></script>
     <script src='/us-en/trident-2207/js/sidebar.js'></script>
-  </body><script>
-    /*
-      if(hasParameter(window.location.search,'q')) {
-        var queryString = decodeURI(getParameter(window.location.search, 'q'));
-        document.getElementsByClassName("sk-search-box__text")[0].setAttribute("value", queryString);
-      }
-
-      function getParameter(searchString,param) {
-        var params = searchString.split('?&');
-        for(var i=0;i<params.length;i++) {
-          var paramIndex = params[i].indexOf(param+"=");
-          if(paramIndex != -1) {
-            return params[i].substring(paramIndex+param.length+1);
-          }
-        }
-
-        return "";
-      }
-
-      function hasParameter(searchString,param) {
-        searchString = searchString || "";
-        param = param || "";
-        return (searchString.indexOf("?"+param+"=") != -1 || searchString.indexOf("&"+param+"=") != -1);
-      }
-      */
-  </script></html>
+  </body></html>

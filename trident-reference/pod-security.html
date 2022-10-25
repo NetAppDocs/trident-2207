@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head class="at-element-marker">
-  <title>Search results</title>
+  <title>Pod Security Standards (PSS) and Security Context Constraints (SCC)</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Search results" />
+  <meta property="og:title" content="Pod Security Standards (PSS) and Security Context Constraints (SCC)" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/us-en/trident-2207/search.html" />
-	<meta property="og:description" content="" />
+	<meta property="og:url" content="https://docs.netapp.com/us-en/trident-2207/trident-reference/pod-security.html" />
+	<meta property="og:description" content="Kubernetes Pod Security Standards (PSS) and Pod Security Policies (PSP) define permission levels and restrict the behavior of pods. OpenShift Security Contex..." />
   <meta property="og:image" content="https://docs.netapp.com/us-en/trident-2207/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="">
-  <meta name="keywords" content=" "><meta name="translate" content="false"/><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Kubernetes Pod Security Standards (PSS) and Pod Security Policies (PSP) define permission levels and restrict the behavior of pods. OpenShift Security Contex...">
+  <meta name="keywords" content=" psp, pss, scc, pod security, pod security standards, pod security policies, security context contraints"><!-- Icons -->
   <link rel="icon" href="/us-en/trident-2207/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -98,7 +98,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><link rel='stylesheet' href='/us-en/trident-2207/css/prism.css' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/us-en/trident-2207/js/na-search.js'></script><script src='/us-en/trident-2207/js/na-pagenav.js'></script><link rel='stylesheet' href='/us-en/trident-2207/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/us-en/trident-2207/css/prism-netapp.css' type='text/css'>
 
 
@@ -182,6 +182,65 @@
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
   
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div id="version-dropdown-new" class="custom-dropdown" >
+  <div class="custom-dropdown-select unselected" title="Astra Trident 22.07">
+    <label>Version</label>
+    <span translate="no" class="notranslate">Astra Trident 22.07</span>
+    <img src="/us-en/trident-2207/images/chevron_up.svg" alt="" class="custom-icon chevrondown invisible" />
+    <img src="/us-en/trident-2207/images/chevron_down.svg" alt="" class="custom-icon chevronup" />
+  </div>
+
+  <ul class="custom-dropdown-menu"><li>
+      
+      <a href="https://docs.netapp.com/us-en/trident-2207/trident-reference/pod-security.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> 22.07</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/trident/trident-reference/pod-security.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> latest</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/trident-2204/trident-reference/pod-security.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> 22.04</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/trident-2201/trident-reference/pod-security.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> 22.01</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/trident-2110/trident-reference/pod-security.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> 21.10</span></span>
+      </a>
+                     
+    </li>
+    
+  </ul>
+</div><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/trident-2207/issues/new?body=Page%3A%20[Pod Security Standards (PSS) and Security Context Constraints (SCC)](https://docs.netapp.com/us-en/trident-2207/trident-reference/pod-security.html)&template=public-issue-template.md" class="page-nav-contribute-link" role="button"><img src="/us-en/trident-2207/images/discuss-sm.svg" alt="" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/trident-2207/blob/main/trident-reference/pod-security.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/trident-2207/images/edit-sm.svg" alt="" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/trident-2207/images/article-sm.svg" alt="" class="github-icon" />Learn how to contribute</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">ON THIS PAGE</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -254,6 +313,31 @@
       </div>
 
       
+      
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/us-en/trident-2207/search.html"
+          data-type="widget" 
+          data-placeholder="Search Documentation"
+          data-no-results-found="No results were found for {query}"
+          data-did-you-mean="Search for {suggestion}."
+          data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?"
+          data-results-found="{hitCount} results found"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/trident-2207/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
     </div>
   </div>
   <div class="n-property-bar__toolbar">
@@ -268,15 +352,15 @@
       </div>
 
       <ul class="custom-dropdown-menu"><li>
-          <a href="https://docs.netapp.com/us-en/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+          <a href="https://docs.netapp.com/us-en/trident-2207/trident-reference/pod-security.html" target="_self"><span translate="no" class="notranslate">English</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ja-jp/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+          <a href="https://docs.netapp.com/ja-jp/trident-2207/trident-reference/pod-security.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-cn/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+          <a href="https://docs.netapp.com/zh-cn/trident-2207/trident-reference/pod-security.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-tw/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+          <a href="https://docs.netapp.com/zh-tw/trident-2207/trident-reference/pod-security.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ko-kr/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+          <a href="https://docs.netapp.com/ko-kr/trident-2207/trident-reference/pod-security.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
         </li></ul>
     </div><!-- End Language Selector -->
 
@@ -768,6 +852,8 @@
 
 
 
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
 
 
         </li>
@@ -1369,7 +1455,7 @@
       data-pdf-exists="true" 
       data-pdf-filename="Pod Security Standards (PSS) and Security Context Constraints (SCC)"
       data-li-level="2#" 
-      class=" "
+      class="  active "
     ><a class="na-navbar-padding" href="/us-en/trident-2207/trident-reference/pod-security.html">
         Pod Security Standards (PSS) and Security Context Constraints (SCC)
       </a></li></ul></li><li 
@@ -1432,31 +1518,409 @@
 </div>
 
       <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Search results</h1>
+  <h1 class="n-doc__component-detail-heading">Pod Security Standards (PSS) and Security Context Constraints (SCC)</h1>
 </div>
 
 
-<div id="search-demo-container" class="n-property-bar__search">
-  <div id="react-search" 
-  data-search-html="/us-en/trident-2207/search.html"
-  data-type="page" 
-  data-placeholder="Search Documentation" 
-  data-no-results-found="No results were found for {query}" 
-  data-did-you-mean="Search for {suggestion}." 
-  data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" 
-  data-results-found="{hitCount} results found"
-  data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
-  data-error-reset="Reset Search"
-  data-sk-es-pf-indexes=""
-  data-flavor=""></div>
-  <button class="search-all-icon n-property-bar__search-toggle-button" type="button">
-    <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
-      <title>search</title>
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/trident-2207/common/svg/sprite.svg#search"></use>
-    </svg>
-  </button>
-</div>
+<p class="page-details">
+  
+    
+    <time datetime="2022-08-04 16:49:56 +0000">08/04/2022</time>
+    
+  
 
+<span>Contributors
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/juliantap">
+    <img  class="avatar avatar-small"
+          alt="juliantap"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/83591660?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+</span>
+
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Kubernetes Pod Security Standards (PSS) and Pod Security Policies (PSP) define permission levels and restrict the behavior of pods. OpenShift Security Context Constraints (SCC) similarly define pod restriction specific to the OpenShift Kubernetes Engine. To provide this customization, Astra Trident enables certain permissions during installation. The following sections detail the permissions set by Astra Trident.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/trident-2207/images/note.svg" alt="Note">
+</td>
+<td class="content">
+PSS replaces Pod Security Policies (PSP). PSP was deprecated in Kubernetes v1.21 and will be removed in v1.25. For more information, see <a href="https://kubernetes.io/docs/concepts/security/">Kubernetes: Security</a>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="required-kubernetes-security-context-and-related-fields">Required Kubernetes Security Context and Related Fields</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Permission</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Privileged</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CSI requires mount points to be Bidirectional, which means the Trident node pod must run a privileged container. For more information, see <a href="https://kubernetes.io/docs/concepts/storage/volumes/#mount-propagation">Kubernetes: Mount propagation</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Host networking</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required for the iSCSI daemon. <code>iscsiadm</code> manages iSCSI mounts and uses host networking to communicate with the iSCSI daemon.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Host IPC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NFS uses interprocess communication (IPC) to communicate with the NFSD.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Host PID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required to start <code>rpc-statd</code> for NFS. Astra Trident queries host processes to determine if <code>rpc-statd</code> is running before mounting NFS volumes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Capabilities</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <code>SYS_ADMIN</code> capability is provided as part of the default capabilities for privileged containers. For example, Docker sets these capabilities for privileged containers:<br>
+<code>CapPrm: 0000003fffffffff</code><br>
+<code>CapEff: 0000003fffffffff</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Seccomp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Seccomp profile is always "Unconfined" in privileged containers; therefore, it cannot be enabled in Astra Trident.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SELinux</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">On OpenShift, privileged containers are run in the <code>spc_t</code> ("Super Privileged Container") domain, and unprivileged containers are run in the <code>container_t</code> domain. On <code>containerd</code>, with <code>container-selinux</code> installed, all containers are run in the <code>spc_t</code> domain, which effectively disables SELinux. Therefore, Astra Trident does not add <code>seLinuxOptions</code> to containers.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DAC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Privileged containers must be run as root. Non-privileged containers run as root to access unix sockets required by CSI.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="pod-security-standards-pss">Pod Security Standards (PSS)</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Label</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>pod-security.kubernetes.io/enforce</code><br>
+<br>
+ <code>pod-security.kubernetes.io/enforce-version</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allows the Trident Controller and nodes to be admitted into the install namespace.<br>
+<br>
+Do not change the namespace label.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>enforce: privileged</code><br>
+<br>
+<code>enforce-version: &lt;version of the current cluster or highest version of PSS tested.&gt;</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/trident-2207/images/warning.svg" alt="Warning">
+</td>
+<td class="content">
+Changing the namespace labels can result in pods not being scheduled, an "Error creating: &#8230;&#8203;" or, "Warning: trident-csi-&#8230;&#8203;". If this happens, check if the namespace label for <code>privileged</code> was changed. If so, reinstall Trident.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="pod-security-policies-psp">Pod Security Policies (PSP)</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Field</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>allowPrivilegeEscalation</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Privileged containers must allow privilege escalation.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>allowedCSIDrivers</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident does not use inline CSI ephemeral volumes.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Empty</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>allowedCapabilities</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non-privileged Trident containers do not require more capabilities than the default set and privileged containers are granted all possible capabilities.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Empty</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>allowedFlexVolumes</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident does not make use of a <a href="https://github.com/kubernetes/community/blob/master/contributors/devel/sig-storage/flexvolume.md" target="_blank" rel="noopener">FlexVolume driver</a>, therefore they are not included in the list of allowed volumes.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Empty</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>allowedHostPaths</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Trident node pod mounts the node&#8217;s root filesystem, therefore there is no benefit to setting this list.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Empty</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>allowedProcMountTypes</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident does not use any <code>ProcMountTypes</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Empty</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>allowedUnsageSysctls</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident does not require any unsafe <code>sysctls</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Empty</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>defaultAddCapabilities</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No capabilities are required to be added to privileged containers.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Empty</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>defaultAllowPrivilegeEscalation</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allowing privilege escalation is handled in each Trident pod.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>forbiddenSysctls</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No <code>sysctls</code> are allowed.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Empty</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>fsGroup</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident containers run as root.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RunAsAny</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>hostIPC</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mounting NFS volumes requires host IPC to communicate with <code>nfsd</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>hostNetwork</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iscsiadm requires the host network to communicate with the iSCSI daemon.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>hostPID</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Host PID is required to check if <code>rpc-statd</code> is running on the node.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>hostPorts</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident does not use any host ports.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Empty</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>privileged</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident node pods must run a privileged container in order to mount volumes.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>readOnlyRootFilesystem</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident node pods must write to the node filesystem.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>requiredDropCapabilities</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident node pods run a privileged container and cannot drop capabilities.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>none</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>runAsGroup</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident containers run as root.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RunAsAny</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>runAsUser</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident containers run as root.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>runAsAny</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>runtimeClass</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident does not use <code>RuntimeClasses</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Empty</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>seLinux</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident does not set <code>seLinuxOptions</code> because there are currently differences in how container runtimes and Kubernetes distributions handle SELinux.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Empty</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>supplementalGroups</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident containers run as root.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RunAsAny</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>volumes</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident pods require these volume plugins.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>hostPath, projected, emptyDir</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="security-context-constraints-scc">Security Context Constraints (SCC)</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Labels</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>allowHostDirVolumePlugin</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident node pods mount the node&#8217;s root filesystem.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>allowHostIPC</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Mounting NFS volumes requires host IPC to communicate with <code>nfsd</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>allowHostNetwork</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iscsiadm requires the host network to communicate with the iSCSI daemon.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>allowHostPID</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Host PID is required to check if <code>rpc-statd</code> is running on the node.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>allowHostPorts</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident does not use any host ports.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>allowPrivilegeEscalation</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Privileged containers must allow privilege escalation.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>allowPrivilegedContainer</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident node pods must run a privileged container in order to mount volumes.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>allowedUnsafeSysctls</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident does not require any unsafe <code>sysctls</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>none</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>allowedCapabilities</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Non-privileged Trident containers do not require more capabilities than the default set and privileged containers are granted all possible capabilities.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Empty</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>defaultAddCapabilities</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No capabilities are required to be added to privileged containers.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Empty</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>fsGroup</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident containers run as root.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RunAsAny</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>groups</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This SCC is specific to Trident and is bound to its user.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Empty</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>readOnlyRootFilesystem</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident node pods must write to the node filesystem.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>requiredDropCapabilities</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident node pods run a privileged container and cannot drop capabilities.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>none</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>runAsUser</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident containers run as root.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RunAsAny</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>seLinuxContext</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident does not set <code>seLinuxOptions</code> because there are currently differences in how container runtimes and Kubernetes distributions handle SELinux.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Empty</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>seccompProfiles</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Privileged containers always run "Unconfined".</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Empty</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>supplementalGroups</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident containers run as root.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RunAsAny</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>users</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">One entry is provided to bind this SCC to the Trident user in the Trident namespace.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">n/a</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>volumes</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trident pods require these volume plugins.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>hostPath, downwardAPI, projected, emptyDir</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 
     </article>
     <!-- Page Container -->
@@ -1600,29 +2064,4 @@
     <script src='/us-en/trident-2207/js/www-ntap.js'></script>
     <script src='/us-en/trident-2207/js/tabbed-blocks.js'></script>
     <script src='/us-en/trident-2207/js/sidebar.js'></script>
-  </body><script>
-    /*
-      if(hasParameter(window.location.search,'q')) {
-        var queryString = decodeURI(getParameter(window.location.search, 'q'));
-        document.getElementsByClassName("sk-search-box__text")[0].setAttribute("value", queryString);
-      }
-
-      function getParameter(searchString,param) {
-        var params = searchString.split('?&');
-        for(var i=0;i<params.length;i++) {
-          var paramIndex = params[i].indexOf(param+"=");
-          if(paramIndex != -1) {
-            return params[i].substring(paramIndex+param.length+1);
-          }
-        }
-
-        return "";
-      }
-
-      function hasParameter(searchString,param) {
-        searchString = searchString || "";
-        param = param || "";
-        return (searchString.indexOf("?"+param+"=") != -1 || searchString.indexOf("&"+param+"=") != -1);
-      }
-      */
-  </script></html>
+  </body></html>

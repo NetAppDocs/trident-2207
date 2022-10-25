@@ -8,8 +8,19 @@
     <description>The latest updates from NetApp Documentation</description>
     <language>en-us</language>
     <ttl>60</ttl>
-    <pubDate>Tue, 25 Oct 2022 15:25:04 +0000</pubDate>
-    <lastBuildDate>Tue, 25 Oct 2022 15:25:04 +0000</lastBuildDate>
+    <pubDate>Tue, 25 Oct 2022 16:07:43 +0000</pubDate>
+    <lastBuildDate>Tue, 25 Oct 2022 16:07:43 +0000</lastBuildDate>
+    
+    
+    
+    <item>
+      <title>Release Notes (30 Aug 2022)</title>
+      <pubDate>Tue, 30 Aug 2022 20:06:06 +0000</pubDate>
+      <link>https://docs.netapp.com/us-en/trident-2207/trident-rn.html?time=1661889966</link>
+      <guid isPermaLink="false">Tue, 30 Aug 2022 20:06:06 +0000</guid>
+      <description><![CDATA[ NetApp is continually improving and enhancing its products and services. Here are some of the latest features, enhancements, and bug fixes in the latest version of Astra Trident. ]]></description>
+    </item>
+    
     
   </channel>
 </rss>

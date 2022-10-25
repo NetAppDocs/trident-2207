@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head class="at-element-marker">
-  <title>Search results</title>
+  <title>Create backends with <code>kubectl</code></title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Search results" />
+  <meta property="og:title" content="Create backends with <code>kubectl</code>" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/us-en/trident-2207/search.html" />
-	<meta property="og:description" content="" />
+	<meta property="og:url" content="https://docs.netapp.com/us-en/trident-2207/trident-use/backend-kubectl.html" />
+	<meta property="og:description" content="A backend defines the relationship between Astra Trident and a storage system. It tells Astra Trident how to communicate with that storage system and how Ast..." />
   <meta property="og:image" content="https://docs.netapp.com/us-en/trident-2207/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="">
-  <meta name="keywords" content=" "><meta name="translate" content="false"/><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="A backend defines the relationship between Astra Trident and a storage system. It tells Astra Trident how to communicate with that storage system and how Ast...">
+  <meta name="keywords" content=" backends, storage system, anf, cvs for gcp, element, hci, solidfire, ontap, aff, fas, ontap select, configure backends, kubectl, create backends"><!-- Icons -->
   <link rel="icon" href="/us-en/trident-2207/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -98,7 +98,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><link rel='stylesheet' href='/us-en/trident-2207/css/prism.css' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/us-en/trident-2207/js/na-search.js'></script><script src='/us-en/trident-2207/js/na-pagenav.js'></script><link rel='stylesheet' href='/us-en/trident-2207/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/us-en/trident-2207/css/prism-netapp.css' type='text/css'>
 
 
@@ -182,6 +182,65 @@
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
   
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div id="version-dropdown-new" class="custom-dropdown" >
+  <div class="custom-dropdown-select unselected" title="Astra Trident 22.07">
+    <label>Version</label>
+    <span translate="no" class="notranslate">Astra Trident 22.07</span>
+    <img src="/us-en/trident-2207/images/chevron_up.svg" alt="" class="custom-icon chevrondown invisible" />
+    <img src="/us-en/trident-2207/images/chevron_down.svg" alt="" class="custom-icon chevronup" />
+  </div>
+
+  <ul class="custom-dropdown-menu"><li>
+      
+      <a href="https://docs.netapp.com/us-en/trident-2207/trident-use/backend-kubectl.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> 22.07</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/trident/trident-use/backend-kubectl.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> latest</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/trident-2204/trident-use/backend-kubectl.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> 22.04</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/trident-2201/trident-use/backend-kubectl.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> 22.01</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/us-en/trident-2110/trident-use/backend-kubectl.html" target="_self">
+        <span translate="no" class="notranslate"><span>Astra Trident</span><span class="version"> 21.10</span></span>
+      </a>
+                     
+    </li>
+    
+  </ul>
+</div><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/trident-2207/issues/new?body=Page%3A%20[Create backends with <code>kubectl</code>](https://docs.netapp.com/us-en/trident-2207/trident-use/backend-kubectl.html)&template=public-issue-template.md" class="page-nav-contribute-link" role="button"><img src="/us-en/trident-2207/images/discuss-sm.svg" alt="" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/trident-2207/blob/main/trident-use/backend-kubectl.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/trident-2207/images/edit-sm.svg" alt="" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/trident-2207/images/article-sm.svg" alt="" class="github-icon" />Learn how to contribute</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">ON THIS PAGE</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -254,6 +313,31 @@
       </div>
 
       
+      
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/us-en/trident-2207/search.html"
+          data-type="widget" 
+          data-placeholder="Search Documentation"
+          data-no-results-found="No results were found for {query}"
+          data-did-you-mean="Search for {suggestion}."
+          data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?"
+          data-results-found="{hitCount} results found"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/trident-2207/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
     </div>
   </div>
   <div class="n-property-bar__toolbar">
@@ -268,15 +352,15 @@
       </div>
 
       <ul class="custom-dropdown-menu"><li>
-          <a href="https://docs.netapp.com/us-en/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+          <a href="https://docs.netapp.com/us-en/trident-2207/trident-use/backend-kubectl.html" target="_self"><span translate="no" class="notranslate">English</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ja-jp/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+          <a href="https://docs.netapp.com/ja-jp/trident-2207/trident-use/backend-kubectl.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-cn/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+          <a href="https://docs.netapp.com/zh-cn/trident-2207/trident-use/backend-kubectl.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-tw/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+          <a href="https://docs.netapp.com/zh-tw/trident-2207/trident-use/backend-kubectl.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ko-kr/trident-2207//search.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+          <a href="https://docs.netapp.com/ko-kr/trident-2207/trident-use/backend-kubectl.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
         </li></ul>
     </div><!-- End Language Selector -->
 
@@ -587,6 +671,8 @@
   
 
 
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
 
 
 
@@ -1093,7 +1179,7 @@
       data-pdf-exists="true" 
       data-pdf-filename="Create backends with kubectl"
       data-li-level="2#" 
-      class=" "
+      class="  active "
     ><a class="na-navbar-padding" href="/us-en/trident-2207/trident-use/backend-kubectl.html">
         Create backends with kubectl
       </a></li><li 
@@ -1432,31 +1518,478 @@
 </div>
 
       <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Search results</h1>
+  <h1 class="n-doc__component-detail-heading">Create backends with <code>kubectl</code></h1>
 </div>
 
 
-<div id="search-demo-container" class="n-property-bar__search">
-  <div id="react-search" 
-  data-search-html="/us-en/trident-2207/search.html"
-  data-type="page" 
-  data-placeholder="Search Documentation" 
-  data-no-results-found="No results were found for {query}" 
-  data-did-you-mean="Search for {suggestion}." 
-  data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" 
-  data-results-found="{hitCount} results found"
-  data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
-  data-error-reset="Reset Search"
-  data-sk-es-pf-indexes=""
-  data-flavor=""></div>
-  <button class="search-all-icon n-property-bar__search-toggle-button" type="button">
-    <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
-      <title>search</title>
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/trident-2207/common/svg/sprite.svg#search"></use>
-    </svg>
-  </button>
-</div>
+<p class="page-details">
+  
+    
+    <time datetime="2022-09-27 22:04:12 +0000">09/27/2022</time>
+    
+  
 
+<span>Contributors
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/netapp-mwallis">
+    <img  class="avatar avatar-small"
+          alt="netapp-mwallis"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/53353653?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/juliantap">
+    <img  class="avatar avatar-small"
+          alt="juliantap"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/83591660?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+</span>
+
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>A backend defines the relationship between Astra Trident and a storage system. It tells Astra Trident how to communicate with that storage system and how Astra Trident should provision volumes from it. After Astra Trident is installed, the next step is to create a backend. The <code>TridentBackendConfig</code> Custom Resource Definition (CRD) enables you to create and manage Trident backends directly through the Kubernetes interface. You can do this by using <code>kubectl</code> or the equivalent CLI tool for your Kubernetes distribution.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="tridentbackendconfig"><code>TridentBackendConfig</code></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><code>TridentBackendConfig</code> (<code>tbc</code>, <code>tbconfig</code>, <code>tbackendconfig</code>) is a frontend, namespaced CRD that enables you to manage Astra Trident backends using <code>kubectl</code>. Kubernetes and storage admins can now create and manage backends directly through the Kubernetes CLI without requiring a dedicated command-line utility (<code>tridentctl</code>).</p>
+</div>
+<div class="paragraph">
+<p>Upon the creation of a <code>TridentBackendConfig</code> object, the following happens:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A backend is created automatically by Astra Trident based on the configuration you provide. This is represented internally as a <code>TridentBackend</code> (<code>tbe</code>, <code>tridentbackend</code>) CR.</p>
+</li>
+<li>
+<p>The <code>TridentBackendConfig</code> is uniquely bound to a <code>TridentBackend</code> that was created by Astra Trident.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Each <code>TridentBackendConfig</code> maintains a one-to-one mapping with a <code>TridentBackend</code>. The former is the interface provided to the user to design and configure backends; the latter is how Trident represents the actual backend object.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/trident-2207/images/warning.svg" alt="Warning">
+</td>
+<td class="content">
+<code>TridentBackend</code> CRs are created automatically by Astra Trident. You <strong>should not</strong> modify them. If you want to make updates to backends, do this by modifying the <code>TridentBackendConfig</code> object.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>See the following example for the format of the <code>TridentBackendConfig</code> CR:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>apiVersion: trident.netapp.io/v1
+kind: TridentBackendConfig
+metadata:
+  name: backend-tbc-ontap-san
+spec:
+  version: 1
+  backendName: ontap-san-backend
+  storageDriverName: ontap-san
+  managementLIF: 10.0.0.1
+  dataLIF: 10.0.0.2
+  svm: trident_svm
+  credentials:
+    name: backend-tbc-ontap-san-secret</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can also take a look at the examples in the <a href="https://github.com/NetApp/trident/tree/stable/v21.07/trident-installer/sample-input/backends-samples" target="_blank" rel="noopener">trident-installer</a> directory for sample configurations for the desired storage platform/service.</p>
+</div>
+<div class="paragraph">
+<p>The <code>spec</code> takes backend-specific configuration parameters. In this example, the backend uses the <code>ontap-san</code> storage driver and uses the configuration parameters that are tabulated here. For the list of configuration options for your desired storage driver, see the <a href="backends.html" target="_blank" rel="noopener">backend configuration information for your storage driver</a>.</p>
+</div>
+<div class="paragraph">
+<p>The <code>spec</code> section also includes <code>credentials</code> and <code>deletionPolicy</code> fields, which are newly introduced in the <code>TridentBackendConfig</code> CR:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>credentials</code>: This parameter is a required field and contains the credentials used to authenticate with the storage system/service. This is set to a user-created Kubernetes Secret. The credentials cannot be passed in plain text and will result in an error.</p>
+</li>
+<li>
+<p><code>deletionPolicy</code>: This field defines what should happen when the <code>TridentBackendConfig</code> is deleted. It can take one of two possible values:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>delete</code>: This results in the deletion of both <code>TridentBackendConfig</code> CR and the associated backend. This is the default value.</p>
+</li>
+<li>
+<p><code>retain</code>: When a <code>TridentBackendConfig</code> CR is deleted, the backend definition will still be present and can be managed with <code>tridentctl</code>. Setting the deletion policy to <code>retain</code> lets users downgrade to an earlier release (pre-21.04) and retain the created backends. The value for this field can be updated after a <code>TridentBackendConfig</code> is created.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/trident-2207/images/note.svg" alt="Note">
+</td>
+<td class="content">
+The name of a backend is set using <code>spec.backendName</code>. If unspecified, the name of the backend is set to the name of the <code>TridentBackendConfig</code> object (metadata.name). It is recommended to explicitly set backend names using <code>spec.backendName</code>.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/trident-2207/images/tip.svg" alt="Tip">
+</td>
+<td class="content">
+Backends that were created with <code>tridentctl</code> do not have an associated <code>TridentBackendConfig</code> object. You can choose to manage such backends with <code>kubectl</code> by creating a <code>TridentBackendConfig</code> CR. Care must be taken to specify identical config parameters (such as <code>spec.backendName</code>, <code>spec.storagePrefix</code>, <code>spec.storageDriverName</code>, and so on). Astra Trident will automatically bind the newly-created <code>TridentBackendConfig</code> with the pre-existing backend.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="steps-overview">Steps overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To create a new backend by using <code>kubectl</code>, you should do the following:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create a <a href="https://kubernetes.io/docs/concepts/configuration/secret/" target="_blank" rel="noopener">Kubernetes Secret</a>. The secret contains the credentials Astra Trident needs to communicate with the storage cluster/service.</p>
+</li>
+<li>
+<p>Create a <code>TridentBackendConfig</code> object. This contains specifics about the storage cluster/service and references the secret created in the previous step.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>After you create a backend, you can observe its status by using <code>kubectl get tbc &lt;tbc-name&gt; -n &lt;trident-namespace&gt;</code> and gather additional details.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-1-create-a-kubernetes-secret">Step 1: Create a Kubernetes Secret</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Create a Secret that contains the access credentials for the backend. This is unique to each storage service/platform. Here’s an example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>kubectl -n trident create -f backend-tbc-ontap-san-secret.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: backend-tbc-ontap-san-secret
+type: Opaque
+stringData:
+  username: cluster-admin
+  password: t@Ax@7q(&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This table summarizes the fields that must be included in the Secret for each storage platform:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Storage platform	Secret Fields	description</th>
+<th class="tableblock halign-left valign-top">Secret</th>
+<th class="tableblock halign-left valign-top">Fields	description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Azure NetApp Files</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>clientID</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>The client ID from an app registration</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Volumes Service for GCP</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>private_key_id</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>ID of the private key. Part of API key for GCP Service Account with CVS admin role</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Volumes Service for GCP</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>private_key</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Private key. Part of API key for GCP Service Account with CVS admin role</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Element (NetApp HCI/SolidFire)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Endpoint</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>MVIP for the SolidFire cluster with tenant credentials</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>username</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Username to connect to the cluster/SVM. Used for credential-based authentication</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>password</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Password to connect to the cluster/SVM. Used for credential-based authentication</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>clientPrivateKey</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Base64-encoded value of client private key. Used for certificate-based authentication</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>chapUsername</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Inbound username. Required if useCHAP=true. For <code>ontap-san</code> and <code>ontap-san-economy</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>chapInitiatorSecret</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>CHAP initiator secret. Required if useCHAP=true. For <code>ontap-san</code> and <code>ontap-san-economy</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>chapTargetUsername</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Target username. Required if useCHAP=true. For <code>ontap-san</code> and <code>ontap-san-economy</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>chapTargetInitiatorSecret</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>CHAP target initiator secret. Required if useCHAP=true. For <code>ontap-san</code> and <code>ontap-san-economy</code></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The Secret created in this step will be referenced in the <code>spec.credentials</code> field of the <code>TridentBackendConfig</code> object that is created in the next step.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-2-create-the-tridentbackendconfig-cr">Step 2: Create the <code>TridentBackendConfig</code> CR</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You are now ready to create your <code>TridentBackendConfig</code> CR. In this example, a backend that uses the <code>ontap-san</code> driver is created by using the <code>TridentBackendConfig</code> object shown below:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>kubectl -n trident create -f backend-tbc-ontap-san.yaml</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>apiVersion: trident.netapp.io/v1
+kind: TridentBackendConfig
+metadata:
+  name: backend-tbc-ontap-san
+spec:
+  version: 1
+  backendName: ontap-san-backend
+  storageDriverName: ontap-san
+  managementLIF: 10.0.0.1
+  dataLIF: 10.0.0.2
+  svm: trident_svm
+  credentials:
+    name: backend-tbc-ontap-san-secret</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-3-verify-the-status-of-the-tridentbackendconfig-cr">Step 3: Verify the status of the <code>TridentBackendConfig</code> CR</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Now that you created the <code>TridentBackendConfig</code> CR, you can verify the status. See the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>kubectl -n trident get tbc backend-tbc-ontap-san
+NAME                    BACKEND NAME          BACKEND UUID                           PHASE   STATUS
+backend-tbc-ontap-san   ontap-san-backend     8d24fce7-6f60-4d4a-8ef6-bab2699e6ab8   Bound   Success</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A backend was successfully created and bound to the <code>TridentBackendConfig</code> CR.</p>
+</div>
+<div class="paragraph">
+<p>Phase can take one of the following values:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Bound</code>: The <code>TridentBackendConfig</code> CR is associated with a backend, and that backend contains <code>configRef</code> set to the <code>TridentBackendConfig</code> CR’s uid.</p>
+</li>
+<li>
+<p><code>Unbound</code>: Represented using <code>""</code>. The <code>TridentBackendConfig</code> object is not bound to a backend. All newly created <code>TridentBackendConfig</code> CRs are in this phase by default. After the phase changes, it cannot revert to Unbound again.</p>
+</li>
+<li>
+<p><code>Deleting</code>: The <code>TridentBackendConfig</code> CR’s <code>deletionPolicy</code> was set to delete. When the <code>TridentBackendConfig</code> CR is deleted, it transitions to the Deleting state.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>If no persistent volume claims (PVCs) exist on the backend, deleting the <code>TridentBackendConfig</code> will result in Astra Trident deleting the backend as well as the <code>TridentBackendConfig</code> CR.</p>
+</li>
+<li>
+<p>If one or more PVCs are present on the backend, it goes to a deleting state. The <code>TridentBackendConfig</code> CR subsequently also enters deleting phase. The backend and <code>TridentBackendConfig</code> are deleted only after all PVCs are deleted.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><code>Lost</code>: The backend associated with the <code>TridentBackendConfig</code> CR was accidentally or deliberately deleted and the <code>TridentBackendConfig</code> CR still has a reference to the deleted backend. The <code>TridentBackendConfig</code> CR can still be deleted irrespective of the <code>deletionPolicy</code> value.</p>
+</li>
+<li>
+<p><code>Unknown</code>: Astra Trident is unable to determine the state or existence of the backend associated with the <code>TridentBackendConfig</code> CR. For example, if the API server is not responding or if the <code>tridentbackends.trident.netapp.io</code> CRD is missing. This might require the user’s intervention.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>At this stage, a backend is successfully created! There are several operations that can additionally be handled, such as <a href="backend_ops_kubectl.html" target="_blank" rel="noopener">backend updates and backend deletions</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="optional-step-4-get-more-details">(Optional) Step 4: Get more details</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can run the following command to get more information about your backend:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>kubectl -n trident get tbc backend-tbc-ontap-san -o wide</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>NAME                    BACKEND NAME        BACKEND UUID                           PHASE   STATUS    STORAGE DRIVER   DELETION POLICY
+backend-tbc-ontap-san   ontap-san-backend   8d24fce7-6f60-4d4a-8ef6-bab2699e6ab8   Bound   Success   ontap-san        delete</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In addition, you can also obtain a YAML/JSON dump of <code>TridentBackendConfig</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>kubectl -n trident get tbc backend-tbc-ontap-san -o yaml</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>apiVersion: trident.netapp.io/v1
+kind: TridentBackendConfig
+metadata:
+  creationTimestamp: "2021-04-21T20:45:11Z"
+  finalizers:
+  - trident.netapp.io
+  generation: 1
+  name: backend-tbc-ontap-san
+  namespace: trident
+  resourceVersion: "947143"
+  uid: 35b9d777-109f-43d5-8077-c74a4559d09c
+spec:
+  backendName: ontap-san-backend
+  credentials:
+    name: backend-tbc-ontap-san-secret
+  managementLIF: 10.0.0.1
+  dataLIF: 10.0.0.2
+  storageDriverName: ontap-san
+  svm: trident_svm
+  version: 1
+status:
+  backendInfo:
+    backendName: ontap-san-backend
+    backendUUID: 8d24fce7-6f60-4d4a-8ef6-bab2699e6ab8
+  deletionPolicy: delete
+  lastOperationStatus: Success
+  message: Backend 'ontap-san-backend' created
+  phase: Bound</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>backendInfo</code> contains the <code>backendName</code> and the <code>backendUUID</code> of the backend that got created in response to the <code>TridentBackendConfig</code> CR. The <code>lastOperationStatus</code> field represents the status of the last operation of the <code>TridentBackendConfig</code> CR, which can be user-triggered (for example, user changed something in <code>spec</code>) or triggered by Astra Trident (for example, during Astra Trident restarts). It can either be Success or Failed. <code>phase</code> represents the status of the relation between the <code>TridentBackendConfig</code> CR and the backend. In the example above, <code>phase</code> has the value Bound, which means that the <code>TridentBackendConfig</code> CR is associated with the backend.</p>
+</div>
+<div class="paragraph">
+<p>You can run the <code>kubectl -n trident describe tbc &lt;tbc-cr-name&gt;</code> command to get details of the event logs.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/trident-2207/images/warning.svg" alt="Warning">
+</td>
+<td class="content">
+You cannot update or delete a backend which contains an associated <code>TridentBackendConfig</code> object using <code>tridentctl</code>. To understand the steps involved in switching between <code>tridentctl</code> and <code>TridentBackendConfig</code>, <a href="backend_options.html" target="_blank" rel="noopener">see here</a>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
 
     </article>
     <!-- Page Container -->
@@ -1600,29 +2133,4 @@
     <script src='/us-en/trident-2207/js/www-ntap.js'></script>
     <script src='/us-en/trident-2207/js/tabbed-blocks.js'></script>
     <script src='/us-en/trident-2207/js/sidebar.js'></script>
-  </body><script>
-    /*
-      if(hasParameter(window.location.search,'q')) {
-        var queryString = decodeURI(getParameter(window.location.search, 'q'));
-        document.getElementsByClassName("sk-search-box__text")[0].setAttribute("value", queryString);
-      }
-
-      function getParameter(searchString,param) {
-        var params = searchString.split('?&');
-        for(var i=0;i<params.length;i++) {
-          var paramIndex = params[i].indexOf(param+"=");
-          if(paramIndex != -1) {
-            return params[i].substring(paramIndex+param.length+1);
-          }
-        }
-
-        return "";
-      }
-
-      function hasParameter(searchString,param) {
-        searchString = searchString || "";
-        param = param || "";
-        return (searchString.indexOf("?"+param+"=") != -1 || searchString.indexOf("&"+param+"=") != -1);
-      }
-      */
-  </script></html>
+  </body></html>
