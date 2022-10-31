@@ -14,6 +14,9 @@ Get started by reviewing the supported frontends, backends, and host configurati
 
 NOTE: To learn about the ports that Astra Trident uses, see link:../trident-reference/trident-ports.html[here^].
 
+== Critical information about Kubernetes 1.25
+Kubernetes 1.25 is supported in Astra Trident 22.10. You must upgrade to Astra Trident 22.10 prior to upgrading to Kubernetes 1.25.
+
 == Supported frontends (orchestrators)
 
 Astra Trident supports multiple container engines and orchestrators, including the following:
