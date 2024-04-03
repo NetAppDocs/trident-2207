@@ -8,6 +8,7 @@ settings:
     pdf_enabled: true
     harmony_enabled: true
   rss_page: "trident-rn.html"
+  downlevel: true
   versions:
     - version-number: "22.07"
       url: /trident-2207      
